@@ -21,9 +21,9 @@ h1,h2,h3,h4,h5,h6{font-weight:400;font-size:100%;line-height:1}
 .page-header h1,.page-header h1 a,.page-header h1 a:active,.page-header h1 a:visited{color:#fff;font-size:150%;font-weight:1000;text-decoration:none}
 .breadcrumb{background:#d3e3fc;color:#77a6f7}
 .breadcrumbcontainer{padding:15px 0;text-align:center}
-.breadcrumbcontainer h1{text-transform:lowercase;display:inline-block;padding:0 15px}
-.breadcrumbcontainer h1:first-of-type{border-right:#77a6f7 1px solid}
-.content{margin:20px auto;max-width:760px;background:#d3e3fc; min-height: 400px;}
+.breadcrumbcontainer li{text-transform:lowercase;display:inline-block;padding:0 15px; position: relative; font-weight: lighter;}
+.breadcrumbcontainer li:first-of-type{border-right:#77a6f7 1px solid}
+.content{margin:20px auto;max-width:840px;background:#d3e3fc; min-height: 400px;}
 .row{padding:20px}
 @media(max-width:899px){
 .content{width:90%; background: none; min-height: 0;}
@@ -34,8 +34,10 @@ h1,h2,h3,h4{text-transform:uppercase}
 .save{float:right}
 .post-form input,.post-form textarea{width:100%}
 .top-menu,.top-menu:hover,.top-menu:visited{color:#fff;float:right;font-size:26pt;margin-right:20px}
-.post:first-of-type{width:65%;height:338px;float:left; max-height: none;}
+.post:first-of-type{width:71%;height:341px;float:left; max-height: none; font-size: 100%;}
 .post{color:#fff;padding:10px;display:inline-block;width:20%;margin:0 10px 2% 0;border:3px solid #77a6f7;vertical-align:top;min-height:150px;max-height:150px;background:#77a6f7; overflow: hidden; }
+.post p{font-size: 60%;}
+.post:first-of-type p{font-size: 90%;}
 .post a,.post a:visited{color:#fff;display:block;position:absolute;width:100px;height:100px}
 .post:hover{background:#4f84e0;border:#4f84e0 3px solid; transition-timing-function: ease;}
 .layoutfooter{background:#77a6f7;color:#fff}
@@ -55,3 +57,10 @@ h1,h2,h3,h4{text-transform:uppercase}
 .layoutfooter{font-size: 80%;}
 .page-header h1{font-size: 80%;}
 }
+
+.nav_multilevel ul>li:hover .level2 {display:block}
+/* 2nd menu level */
+.nav_multilevel .level2{position:absolute; display:none;  background: #77a6f7; margin-top: 0px; margin-left: -20px; }
+.nav_multilevel .level2 li{display:block; padding: 0; border: #d3e3fc 3px solid; border-top: none;}
+.nav_multilevel .level2 li a{display:block;width:120px;text-decoration:none; text-transform: initial;color:white; padding: 10px; font-size: 70%;}
+.nav_multilevel li a:hover{ font-weight: bold;}
